@@ -1,5 +1,5 @@
 ARG GRIDCOIN_VERSION="5.5.1.0"
-ARG IMAGE_TAG="debian-13-v4.10"
+ARG IMAGE_TAG="debian-13-v4"
 ARG ARCH="amd64"
 
 FROM jlesage/baseimage-gui:${IMAGE_TAG}
