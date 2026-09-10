@@ -1,9 +1,10 @@
-ARG ARCH="amd64"
+ARG GRIDCOIN_VERSION="5.5.1.0"
 ARG IMAGE_TAG="debian-13-v4.10"
+ARG ARCH="amd64"
 
 FROM jlesage/baseimage-gui:${IMAGE_TAG}
 ARG ARCH
-ARG GRIDCOIN_DEB="https://github.com/gridcoin-community/Gridcoin-Research/releases/download/5.4.9.0/gridcoinresearch-qt_5.4.9.0.trixie-1_${ARCH}.deb"
+ARG GRIDCOIN_DEB="https://github.com/gridcoin-community/Gridcoin-Research/releases/download/${GRIDCOIN_VERSION}/gridcoinresearch-qt_${GRIDCOIN_VERSION}.trixie-1_${ARCH}.deb"
 ARG APP_ICON="https://images.seeklogo.com/logo-png/39/2/gridcoin-grc-logo-png_seeklogo-399512.png"
 ENV APP_NAME="Gridcoin Wallet"
 
