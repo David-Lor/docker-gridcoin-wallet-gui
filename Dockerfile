@@ -14,7 +14,7 @@ ARG GRIDCOIN_DEB="https://github.com/gridcoin-community/Gridcoin-Research/releas
 RUN apt-get -yq update && \
     apt-get -yq install curl && \
     curl -L --output /tmp/gridcoin.deb "${GRIDCOIN_DEB}" && \
-    apt-get -yq install /tmp/gridcoin.deb && \
+    apt-get -yq install /tmp/gridcoin.deb systemd- && \
     apt-get -yq purge curl && \
     apt-get -yq autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/gridcoin.deb
